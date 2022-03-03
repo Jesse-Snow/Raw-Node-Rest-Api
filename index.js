@@ -1,3 +1,8 @@
+/*
+  * Initialization and configuration of the server
+  * Routes listening to the baryng http methods of a server
+  * A port number to listen and set the server live
+*/
 const http = require('http');
 
 const port = process.env.PORT || 8080;
