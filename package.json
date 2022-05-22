@@ -1,0 +1,23 @@
+{
+  "name": "raw-api-node",
+  "version": "1.0.0",
+  "description": "Web api to make a crud using http module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesse-Snow/Raw-Node-Rest-Api.git"
+  },
+  "author": "Jesse Neves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesse-Snow/Raw-Node-Rest-Api/issues"
+  },
+  "homepage": "https://github.com/Jesse-Snow/Raw-Node-Rest-Api#readme",
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
+  }
+}
