@@ -31,6 +31,7 @@ class Controller {
         ...todo,
       };
       // retorna um novo todo
+      data.push(newTodo);
       resolve(newTodo);
     });
   }
@@ -56,6 +57,7 @@ class Controller {
     return new Promise((resolve,reject)=>{
       // Retorna o todo
       let todo = data.find((todo)=>todo.id === parseInt(id));
+      data.splice(data.indexOf(todo),1);
       // Se não tiver todo, retorne um erro
       if(!todo){
         reject(`Todo com id ${id} nao foi encontrado`);
