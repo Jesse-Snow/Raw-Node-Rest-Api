@@ -4,7 +4,8 @@
   "description": "Web api to make a crud using http module",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "start":"node index.js"
   },
   "repository": {
     "type": "git",
