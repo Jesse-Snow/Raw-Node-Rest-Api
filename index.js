@@ -34,7 +34,6 @@ const server = http.createServer(async (req,res) => {
     try{
 
       const id = req.url.split("/")[3];
-      console.log(id);
       let message = await new Todo().deleteTodo(id);
       res.writeHead(200,{"Content-Type":"application/json"});
       res.end(JSON.stringify(message));
@@ -45,7 +44,7 @@ const server = http.createServer(async (req,res) => {
   }
 
   // Route UPDATE: /api/todos/:id
-  else if ( req.url.match(/\/api\/todos\/([0-9]+)/) && req.method === "PATCH"){
+  else if ( req.url.match(/\/api\/todos\/([0-9]+)/) && req.method === "PUT"){
     try{
       const id = req.url.split("/")[3];
       let updated_todo = await new Todo().updateTodo(id);
